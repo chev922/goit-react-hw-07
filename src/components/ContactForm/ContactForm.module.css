@@ -1,0 +1,86 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+  padding: 15px;
+  width: 300px;
+  border: 1px solid black;
+  margin-bottom: 12px;
+}
+.label {
+  display: block;
+  margin-bottom: 4px;
+}
+.input {
+  display: block;
+  width: 100%;
+  padding: 5px 10px;
+}
+
+.error {
+  color: red;
+}
+.loader {
+  display: flex;
+  height: 10px;
+  align-items: center;
+}
+
+.bar {
+  display: inline-block;
+  width: 3px;
+  height: 15px;
+  background-color: rgba(45, 14, 243, 0.5);
+  border-radius: 10px;
+  animation: scale-up4 1s linear infinite;
+}
+
+.bar:nth-child(2) {
+  height: 15px;
+  margin: 0 5px;
+  animation-delay: 0.25s;
+}
+
+.bar:nth-child(3) {
+  animation-delay: 0.5s;
+}
+
+@keyframes scale-up4 {
+  20% {
+    background-color: #ffff;
+    transform: scaleY(1.5);
+  }
+
+  40% {
+    transform: scaleY(1);
+  }
+}
+
+button {
+  color: #090909;
+  padding: 0.7em 1.7em;
+  font-size: 18px;
+  border-radius: 0.5em;
+  background: #ffffff;
+  cursor: pointer;
+  border: 1px solid #000000;
+  transition: all 0.3s;
+  box-shadow: 6px 6px 12px #c5c5c5, -6px -6px 12px #ffffff;
+}
+
+button:hover {
+  border: 1px solid white;
+}
+
+button:active {
+  box-shadow: 4px 4px 12px #c5c5c5, -4px -4px 12px #ffffff;
+}
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 10px 10px;
+  margin-left: auto;
+  margin-right: auto;
+}
